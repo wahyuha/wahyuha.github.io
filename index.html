@@ -217,7 +217,7 @@ function fetchProvinces() {
       var res = data.data;
       provinces = _.sortBy(res, [function(o) { return o.nama; }]);
       
-      provinces.forEach(province => {
+      provinces.forEach(function(province) {
         var option = $('<option/>').val(province.id).html(province.nama);
         $('#sel_provinces').append(option);
       });
