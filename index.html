@@ -104,7 +104,7 @@
                 </div>
                 <div class="phone_ph ios">Diawali kode negara. Contoh: 6281932006734 (tanpa tanda plus)</div>
                 <div class="select-field col s12 ios">
-                    <select required name="s_gender">
+                    <select required name="s_gender" class="browser-default">
                         <option value="" disabled selected>Jenis Kelamin</option>
                         <option value="Ikhwan">Ikhwan</option>
                         <option value="Akhwat">Akhwat</option>
@@ -112,13 +112,13 @@
                 </div>
                 
                 <div class="select-field col s12 wrap_provinces ios">
-                    <select required id="sel_provinces" name="s_provinces">
+                    <select required id="sel_provinces" name="s_provinces" class="browser-default">
                         <option value="" disabled selected>Kabupaten</option>
                     </select>
                 </div>
 
                 <div class="select-field col s12 ios">
-                    <select required id="sel_city" name="s_city">
+                    <select required id="sel_city" name="s_city"  class="browser-default">
                         <option value="" disabled selected>Kota</option>
                     </select>
                 </div>
@@ -225,15 +225,15 @@ function fetchProvinces() {
       /* 
       * This method DOESN'T WORK because the DOM is manipulated by materializecss
       */
-      // $('#sel_provinces').bind('change',function(){
-      //   var selected = $(this).val();
-      //   setDistrict(selected);
-      // });
-      setTimeout(function() {
-        $('.wrap_provinces').find('li').find('span').bind('click', function() {
-          setDistrict($(this).html());
-        })
-      },300)
+      $('#sel_provinces').bind('change',function(){
+        var selected = $(this).val();
+        setDistrict(selected);
+      });
+      // setTimeout(function() {
+      //   $('.wrap_provinces').find('li').find('span').bind('click', function() {
+      //     setDistrict($(this).html());
+      //   })
+      // },300)
     }
   });
 }
@@ -255,9 +255,9 @@ function fetchDistricts() {
   });
 }
 
-function setDistrict(name_provinsi) {
+function setDistrict(id_provinsi) {
   resetDistrict();
-  var selectedDistrict = _.find(groupedProvinces, function(a) { return a.nama.toLocaleLowerCase() === name_provinsi.toLocaleLowerCase() });
+  var selectedDistrict = _.find(groupedProvinces, function(a) { return a.id === Number(id_provinsi) });
   var activeDistrict = _.sortBy(selectedDistrict.district, [function(o) { return o.nama; }]);
 
   activeDistrict.forEach(district => {
