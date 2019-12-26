@@ -229,10 +229,11 @@ function fetchProvinces() {
       //   var selected = $(this).val();
       //   setDistrict(selected);
       // });
-
-      $('.wrap_provinces').find('li').find('span').bind('click', function() {
-        setDistrict($(this).html());
-      })
+      setTimeout(function() {
+        $('.wrap_provinces').find('li').find('span').bind('click', function() {
+          setDistrict($(this).html());
+        })
+      },300)
     }
   });
 }
