@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VLH2K4SY7V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-VLH2K4SY7V');
+</script>
+<link rel="shortcut icon" href="https://hsi.abdullahroy.com/static/images/icon.gif" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Daftar HSI Ustadz Dr. Abdullah Roy, M.A.</title>
+<meta name="og:title" content="Daftar HSI Ustadz Dr. Abdullah Roy, M.A."/>
+<meta name="og:image" content="https://daftar.abdullahroy.com/hsi-mobile-app.jpeg"/>
+<meta name="keywords" content="HSI, islam, sunnah, salafi, belajar islam, belajar online"/>
+<meta name="description" content="Halaqah Silsilah Ilmiyyah AbdullahRoy adalah salah satu Program Belajar Akidah Islam secara online yang diasuh dan dibimbing oleh Ustadz Dr. Abdullah Roy, M.A. hafizhahullah."/>
+<meta name="language" content="ID">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" href="assets/css/registerStyle.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.5.1/flatpickr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+<style type="text/css">
+.phone_ph {
+  font-size: 10px;
+  color: #26a69a;
+  text-align: left;
+  margin-top: -12px;
+  margin-bottom: 12px;
+  padding: 0 2px;
+}
+@media (max-width: 800px) {
+    .arrow {
+        display: none !important;
+    }
+    .info.valign-wrapper {
+        height: 350px !important;
+    }
+    .head {
+        height: 400px !important;
+    }
+}
+.ios {
+  display: none;
+}
+</style>
+</head>
+<body class="registerMahazi">
+    <div class="containerRegister">
+        <div class="head">
+            <div class="info valign-wrapper">
+                <img src="img/bgMahazi.jpeg" alt="">
+                <h6 class="center-align bodyInfo">
+                    <img src="img/logoWhite.svg" alt="">
+                    <span class="subtitle">program</span>
+                    <span class="title">HSI</span>
+                    <p>Halaqah Silsilah Ilmiyyah AbdullahRoy adalah salah satu Program Belajar Akidah Islam secara online yang diasuh dan dibimbing oleh Ustadz Dr. Abdullah Roy, M.A. hafizhahullah. </p>
+                    <div class="arrow"><img src="img/arrow.svg" alt=""></div>
+                </h6>
+            </div>
+        </div>
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <h4>Pendaftaran Berhasil</h4>
+            <p>Aplikasi akan membuka WhatsApp. Jika sudah, ketuk tombol kirim pada WhatsApp. Harap jangan merubah isi text.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Kirim</a>
+          </div>
+        </div>
+        <div class="contentRegister">
+            <span class="title">daftar</span>
+            <!--kalau android tampilkan ini-->
+            <p class="subtitle and">Gunakan aplikasi resmi HSI AbdullahRoy yang ada di Google Play Store dan Apple App Store untuk melakukan pendaftaran.</p>
+            <!--end android-->
+            <!-- ios tampilkan ini-->
+            <p class="subtitle ios">
+                Daftar HSI untuk ikut belajar Ilmu Agama Islam secara Ilmiah berdasarkan Al Qur'an dan Assunnah shahihah.⁣
+            </p>
+            <!-- end ios -->
+            <form id="register">
+                <!--kalau android tampilkan ini-->
+                <div class="row footer and">
+                    <div class="col s12"><p>Download aplikasi mobile-nya disini</p></div>
+                    <div class="col s6"><a href="#" onclick="dwAn()" class="btn waves-effect btn-app-store"><img src="img/google-play-badge.png" alt=""></a></div>
+                    <div class="col s6"><a href="#" onclick="dwAp()" class="btn waves-effect btn-app-store"><img src="img/appstore.jpg" alt=""></a></div>
+                </div>
+                <!--end android-->
+                <!--kalau ios tampilkan ini-->
+                <div class="input-field col s6 ios">
+                    <input type="text" name="name" class="validate" placeholder="Nama Lengkap" required>
+                </div>
+
+                <div class="input-field col s6 ios">
+                    <input type="number" name="no_wa" class="validate" placeholder="No WhatsApp. Contoh: 6281932006734" required>
+                </div>
+                <div class="phone_ph ios">Diawali kode negara. Contoh: 6281932006734 (tanpa tanda plus)</div>
+                <div class="select-field col s12 ios">
+                    <select required name="s_gender">
+                        <option value="" disabled selected>Jenis Kelamin</option>
+                        <option value="Ikhwan">Ikhwan</option>
+                        <option value="Akhwat">Akhwat</option>
+                    </select>
+                </div>
+                
+                <div class="select-field col s12 wrap_provinces ios">
+                    <select required id="sel_provinces" name="s_provinces">
+                        <option value="" disabled selected>Kabupaten</option>
+                    </select>
+                </div>
+
+                <div class="select-field col s12 ios">
+                    <select required id="sel_city" name="s_city">
+                        <option value="" disabled selected>Kota</option>
+                    </select>
+                </div>
+
+                <div class="input-field col s6 ios">
+                    <input type="text" name="dob" class="validate datePicker " placeholder="Tanggal lahir" required>
+                </div>
+                <input type="hidden" name="uuid" value="" />
+                <div class="col s12 ios">
+                  <div class="row valign-wrapper error-state hide">
+                    <div class="col s1 center-align">
+                      <i class="material-icons">error</i>
+                    </div>
+                    <div class="col s11 left-align red-text"></div>
+                  </div>
+                  <div class="preloader-wrapper small loading-state">
+                    <div class="spinner-layer spinner-green-only">
+                      <div class="circle-clipper left">
+                        <div class="circle"></div>
+                      </div><div class="gap-patch">
+                        <div class="circle"></div>
+                      </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 ios">
+                  <button class="btn btn-primary btnSent btn-submit">Daftar</button>
+                  <button class="btn btn-primary btnSent disabled btn-process hide" disabled>Processing...</button>
+                </div>
+                <!--end ios -->
+            </form>
+        </div>
+    </div>
+<script>
+var API_URL= 'https://api.abdullahroy.id/v1/';
+var provinces = [];
+var groupedProvinces = [];
+// var activeDistrict = [];
+
+function isios() {
+  return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+}
+
+function uuid() {
+    //// return uuid of form xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx
+    var uuid = '', ii;
+    for (ii = 0; ii < 32; ii += 1) {
+      switch (ii) {
+      case 8:
+      case 20:
+        uuid += '-';
+        uuid += (Math.random() * 16 | 0).toString(16);
+        break;
+      case 12:
+        uuid += '-';
+        uuid += '4';
+        break;
+      case 16:
+        uuid += '-';
+        uuid += (Math.random() * 4 | 8).toString(16);
+        break;
+      default:
+        uuid += (Math.random() * 16 | 0).toString(16);
+      }
+    }
+    return uuid;
+}
+
+function dwAn() {
+    gtag('send', 'event', 'download', {
+        'event_category': 'Button',
+        'event_label':'App Download',
+        'value':'android'
+    });
+    window.location = 'https://play.google.com/store/apps/details?id=com.hsimobileapp';
+}
+
+function dwAp() {
+    gtag('send', 'event', 'download', {
+        'event_category': 'Button',
+        'event_label':'App Download',
+        'value':'ios coming soon'
+    });
+
+    alert('Aplikasi HSI untuk iOS insyaallah akan segera rilis.');
+    return false;
+}
+
+function fetchProvinces() {
+  $.ajax({
+    type: 'GET',
+    url: API_URL+'provinces',
+    success: function(data) {
+      var res = data.data;
+      provinces = _.sortBy(res, [function(o) { return o.nama; }]);
+      
+      provinces.forEach(province => {
+        var option = $('<option/>').val(province.id).html(province.nama);
+        $('#sel_provinces').append(option);
+      });
+      $('#sel_provinces').formSelect();
+      /* 
+      * This method DOESN'T WORK because the DOM is manipulated by materializecss
+      */
+      // $('#sel_provinces').bind('change',function(){
+      //   var selected = $(this).val();
+      //   setDistrict(selected);
+      // });
+
+      $('.wrap_provinces').find('li').find('span').bind('click', function() {
+        setDistrict($(this).html());
+      })
+    }
+  });
+}
+
+function fetchDistricts() {
+  $.ajax({
+    type: 'GET',
+    url: API_URL+'districts',
+    success: function(data) {
+      var districts = data.data;
+
+      provinces.forEach(function(province, index) {
+        groupedProvinces.push({
+          ...province,
+          district: _.filter(districts, function(district) { return district.id_provinsi === province.id })
+        });
+      });
+    }
+  });
+}
+
+function setDistrict(name_provinsi) {
+  resetDistrict();
+  var selectedDistrict = _.find(groupedProvinces, function(a) { return a.nama.toLocaleLowerCase() === name_provinsi.toLocaleLowerCase() });
+  var activeDistrict = _.sortBy(selectedDistrict.district, [function(o) { return o.nama; }]);
+
+  activeDistrict.forEach(district => {
+    $('#sel_city').append('<option value="'+district.id+'">'+district.nama+'</option>')
+  });
+  $('#sel_city').formSelect();
+}
+
+function resetDistrict() {
+  $('#sel_city').html('<option>Kota</option>');
+  $('#sel_city').formSelect();
+}
+
+function onSucces(uuid, nomer_hp) {
+  $('.modal').modal({
+    onCloseEnd: function() {
+      openWhatsApp (uuid, nomer_hp);
+    }
+  });
+  $('.modal').modal('open');
+}
+
+function openWhatsApp (uuid, nomer_hp) {
+  var urlWa = 'https://api.whatsapp.com/send?phone=' + nomer_hp + '&text=' + uuid;
+  window.location = urlWa;
+}
+
+function handleSubmit(data) {
+  var dobDate = new Date(data[5].value);
+  var d_month = ("0" + (dobDate.getMonth() + 1)).slice(-2);
+  var d_date = ("0" + dobDate.getDate()).slice(-2);
+  var formattedDate = dobDate.getFullYear() + '-' + d_month + '-' + d_date;
+  var payload = {
+    tanggal_lahir: formattedDate,
+    jenis_kelamin: data[2].value,
+    nomer_hp: String(parseInt(data[1].value)),
+    nama_lengkap: data[0].value,
+    provinsi: parseInt(data[3].value),
+    kabupaten: parseInt(data[4].value),
+    uuid: data[6].value,
+  };
+  
+  $.ajax({
+    type: 'POST',
+    url: API_URL+'register',
+    data: JSON.stringify(payload),
+    contentType:"application/json; charset=utf-8",
+    beforeSend: function() {
+      $('.error-state').addClass('hide').hide().find('.red-text').html('');
+      buttonProcess(true);
+    },
+    success: function(response) {
+      buttonProcess(false);
+      saveProfilesToLocal(payload);
+      onSucces(payload.uuid, response.data.hsi_mobile_number);
+    },
+    error: function(e, msg) {
+      buttonProcess(false);
+      $('.error-state').removeClass('hide').show().find('.red-text').html('Gagal mendaftar. '+e.responseJSON.message);
+    }
+  });
+}
+
+function buttonProcess(status) {
+  if (status) {
+    $('.btn-submit').hide();
+    $('.btn-process').removeClass('hide').show();
+    $('.loading-state').addClass('active');
+  } else {
+    $('.btn-submit').show();
+    $('.btn-process').addClass('hide').hide();
+    $('.loading-state').removeClass('active');
+  }
+}
+
+function saveProfilesToLocal(payload) {
+  if (typeof(Storage) !== "undefined") {
+    localStorage.setItem("hn", payload.nama_lengkap);
+    localStorage.setItem("hu", payload.uuid);
+  } else {
+    // not suppported
+  }
+}
+
+function checkIfRegistered() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.hu) {
+      $('.contentRegister').hide();
+      var registeredScreen = $('<div/>').html('<div class="section white"><div class="row container"><blockquote>Anda sudah terdaftar sebagai Wahyu Haryanto.</blockquote><div class="row"><div class="col s8">Silahkan simpan kode anda</div><span class="new badge blue col" data-badge-caption="">'+localStorage.hu+'</span></div></div></div>');
+      $('.containerRegister').append(registeredScreen);
+    }
+  }
+}
+
+$(document).ready(function(){
+  $('select').formSelect();
+  $(".datePicker").flatpickr({
+      dateFormat: "d-M-Y",
+  });
+  $('[name="uuid"]').val(uuid());
+
+  fetchProvinces();
+  fetchDistricts();
+
+  if(isios()){
+    $('.and').hide();
+    $('.ios').show();
+  }
+
+  $('#register').submit(function(e) {
+    e.preventDefault();
+  
+    handleSubmit($(this).serializeArray());
+  });
+
+  checkIfRegistered();
+});
+</script>
+</body>
+</html>
